@@ -31,6 +31,8 @@ M.load_plugin_config = function(plugins)
             plugin_opt.install_config[1] = plugin_opt.name
             
             use(plugin_opt.install_config)
+
+            plugin_opt.init()
         end
     end)
 end
